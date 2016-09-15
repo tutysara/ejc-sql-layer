@@ -1,7 +1,7 @@
 #+TITLE: my-ejc-sql layer
 
 # The maximum height of the logo should be 200 pixels.
-[[img/my-ejc-sql.png]]
+[[img/my-ejc-sql.svg
 
 # TOC links should be GitHub style anchors.
 * Table of Contents                                        :TOC_4_gh:noexport:
