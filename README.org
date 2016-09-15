@@ -10,8 +10,10 @@
  - [[#key-bindings][Key bindings]]
 
 * Description
-This layer does wonderful things:
-  - thing01
+This layer provides support for ejc-sql which turns Emacs into simple SQL client
+- Uses JDBC connection to databases via clojure/java.jdbc lib
+- Use multiple connections at the same time
+- Autocompletion and basic SQL scripts formatting are also available.
 
 * Install
 To use this configuration layer, add it to your =~/.spacemacs=. You will need to
@@ -20,9 +22,15 @@ file.
 
 * Key bindings
 
-| Key Binding | Description    |
-|-------------+----------------|
-| ~SPC x x x~ | Does thing01   |
+| Key Binding  | Description                                                                                                       |
+|--------------+-------------------------------------------------------------------------------------------------------------------|
+| ~SPC m x ~   | `ejc-eval-user-sql-at-point` Evaluate SQL/JPQL script bounded by the `ejc-sql-separator` or/and buffer boundaries |
+| ~SPC m t d ~ | `ejc-describe-table` Describe SQL table                                                                                              |
+| ~SPC m r ~   | `ejc-show-last-result` Show last result                                                                           |
+| ~SPC m t l ~ | `ejc-show-tables-list` Show tables list                                                                           |
+| ~SPC m f s ~ | `ejc-strinp-sql-at-point` Strip SQL (trim java string tokens)                                                     |
+| ~SPC m f j ~ | `ejc-dress-sql-at-point` Dress SQL (to copy-paste it to java code)                                                |
+|              |                                                                                                                   |
 # Use GitHub URLs if you wish to link a Spacemacs documentation file or its heading.
 # Examples:
 # [[https://github.com/syl20bnr/spacemacs/blob/master/doc/VIMUSERS.org#sessions]]

@@ -67,13 +67,20 @@ Each entry is either:
     :commands (ejc-sql-mode)
     :init (message "ejc-sql-init")
     :config
-    (message "ejc-sql-config")
-    (my-ejc-sql/load-connection-file
-     *my-ejc-sql-connections-file*)))
+    (progn
+      (message "ejc-sql-config")
+      (my-ejc-sql/load-connection-file
+       *my-ejc-sql-connections-file*)
+      (spacemacs/set-leader-keys-for-major-mode 'ejc-sql-mode "x" 'ejc-eval-user-sql-at-point)
+      (spacemacs/set-leader-keys-for-major-mode 'ejc-sql-mode "td" 'ejc-describe-table)
+      (spacemacs/set-leader-keys-for-major-mode 'ejc-sql-mode "r" 'ejc-show-last-result)
+      (spacemacs/set-leader-keys-for-major-mode 'ejc-sql-mode "tl" 'ejc-show-tables-list)
+      (spacemacs/set-leader-keys-for-major-mode 'ejc-sql-mode "fs" 'ejc-strinp-sql-at-point)
+      (spacemacs/set-leader-keys-for-major-mode 'ejc-sql-mode "fj" 'ejc-dress-sql-at-point)
+      )))
 
 (defun my-ejc-sql/init-clomacs ()
   (use-package clomacs))
-
 ;;; packages.el ends here
 
 
