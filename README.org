@@ -22,15 +22,26 @@ file.
 
 * Key bindings
 
-| Key Binding  | Description                                                                                                       |
-|--------------+-------------------------------------------------------------------------------------------------------------------|
-| ~SPC m x~    | Evaluate SQL/JPQL script bounded by the `ejc-sql-separator` or/and buffer boundaries  |
-| ~SPC m t d~  | Describe SQL table                                                                                                |
-| ~SPC m r~    | Show last result                                                                            |
-| ~SPC m t l~  | Show tables list                                                                            |
-| ~SPC m f s~  | Strip SQL (trim java string tokens)                                                      |
-| ~SPC m f j~  | Dress SQL (to copy-paste it to java code)                                                  |
-|              |                                                                                                                   |
+| Key Binding | Description                                                                          |
+|-------------+--------------------------------------------------------------------------------------|
+| ~SPC m x x~ | Evaluate SQL/JPQL script bounded by the `ejc-sql-separator` or/and buffer boundaries |
+| ~SPC m x r~ | Evaluate SQL/JPQL statements in selected region                                      |
+| ~SPC m t d~ | Describe SQL table                                                                   |
+| ~SPC m r~   | Show last result                                                                     |
+| ~SPC m l t~ | Show tables list                                                                     |
+| ~SPC m a s~ | Strip SQL (trim java string tokens)                                                  |
+| ~SPC m a j~ | Dress SQL (to copy-paste it to java code)                                            |
+| ~SPC m c~   | Connect to database for current buffer                                               |
+| ~SPC m q~   | Close all database connections, quit Clojure REPL                                    |
+| ~SPC m a f~ | Format SQL                                                                           |
+| ~SPC m m~   | Mark SQL script bounded by the `ejc-sql-separator` or/and buffer boundaries          |
+| ~SPC m l c~ | Show constraints list                                                                |
+| ~SPC m l p~ | Show procedures list                                                                 |
+| ~SPC m L~   | Open log                                                                             |
+| ~SPC m b~   | Create buffer with `ejc-sql-mode`                                                    |
+| ~SPC m C~   | Clean your current connection cache (database owners and tables list)                |
+|             |                                                                                      |
+
 # Use GitHub URLs if you wish to link a Spacemacs documentation file or its heading.
 # Examples:
 # [[https://github.com/syl20bnr/spacemacs/blob/master/doc/VIMUSERS.org#sessions]]

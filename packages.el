@@ -71,13 +71,23 @@ Each entry is either:
       (message "ejc-sql-config")
       (my-ejc-sql/load-connection-file
        *my-ejc-sql-connections-file*)
-      (spacemacs/set-leader-keys-for-major-mode 'ejc-sql-mode "x" 'ejc-eval-user-sql-at-point)
-      (spacemacs/set-leader-keys-for-major-mode 'ejc-sql-mode "td" 'ejc-describe-table)
-      (spacemacs/set-leader-keys-for-major-mode 'ejc-sql-mode "r" 'ejc-show-last-result)
-      (spacemacs/set-leader-keys-for-major-mode 'ejc-sql-mode "tl" 'ejc-show-tables-list)
-      (spacemacs/set-leader-keys-for-major-mode 'ejc-sql-mode "fs" 'ejc-strinp-sql-at-point)
-      (spacemacs/set-leader-keys-for-major-mode 'ejc-sql-mode "fj" 'ejc-dress-sql-at-point)
-      )))
+      (spacemacs/set-leader-keys-for-major-mode 'sql-mode
+        "xx" 'ejc-eval-user-sql-at-point
+        "xr" 'ejc-eval-user-sql-region
+        "td" 'ejc-describe-table
+        "r" 'ejc-show-last-result
+        "lt" 'ejc-show-tables-list
+        "as" 'ejc-strinp-sql-at-point
+        "aj" 'ejc-dress-sql-at-point
+        "c" 'ejc-connect
+        "q" 'ejc-quit-connection
+        "af" 'ejc-format-sql-at-point
+        "m" 'ejc-mark-this-sql
+        "lc" 'ejc-show-constraints-list
+        "lp" 'ejc-show-procedures-list
+        "L" 'ejc-open-log
+        "b" 'ejc-switch-to-sql-editor-buffer
+        "C" 'ejc-invalidate-cache))))
 
 (defun my-ejc-sql/init-clomacs ()
   (use-package clomacs))
