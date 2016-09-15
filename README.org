@@ -24,12 +24,12 @@ file.
 
 | Key Binding  | Description                                                                                                       |
 |--------------+-------------------------------------------------------------------------------------------------------------------|
-| ~SPC m x~    | `ejc-eval-user-sql-at-point` Evaluate SQL/JPQL script bounded by the `ejc-sql-separator` or/and buffer boundaries |
-| ~SPC m t d~  | `ejc-describe-table` Describe SQL table                                                                                              |
-| ~SPC m r~    | `ejc-show-last-result` Show last result                                                                           |
-| ~SPC m t l~  | `ejc-show-tables-list` Show tables list                                                                           |
-| ~SPC m f s~  | `ejc-strinp-sql-at-point` Strip SQL (trim java string tokens)                                                     |
-| ~SPC m f j~  | `ejc-dress-sql-at-point` Dress SQL (to copy-paste it to java code)                                                |
+| ~SPC m x~    | Evaluate SQL/JPQL script bounded by the `ejc-sql-separator` or/and buffer boundaries  |
+| ~SPC m t d~  | Describe SQL table                                                                                                |
+| ~SPC m r~    | Show last result                                                                            |
+| ~SPC m t l~  | Show tables list                                                                            |
+| ~SPC m f s~  | Strip SQL (trim java string tokens)                                                      |
+| ~SPC m f j~  | Dress SQL (to copy-paste it to java code)                                                  |
 |              |                                                                                                                   |
 # Use GitHub URLs if you wish to link a Spacemacs documentation file or its heading.
 # Examples:
