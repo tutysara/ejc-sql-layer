@@ -20,6 +20,8 @@ To use this configuration layer, add it to your =~/.spacemacs=. You will need to
 add =my-ejc-sql= to the existing =dotspacemacs-configuration-layers= list in this
 file.
 
+Connections are defined in =~/.my-ejc-sql-connections.el=. Can be overridden by setting
+=(setq *my-ejc-sql-connections-file* "~/connections.el")=
 * Key bindings
 
 | Key Binding | Description                                                                          |
